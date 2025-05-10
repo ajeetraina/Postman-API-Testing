@@ -6,6 +6,24 @@ A collection of Postman examples and resources for effective API testing.
 
 This repository contains Postman collections and resources to help you learn and implement API testing using Postman. It's designed for developers and QA professionals who want to improve their API testing skills and automate their testing workflows.
 
+## API Testing Workflow
+
+```mermaid
+graph TD
+    A[Define API Requirements] --> B[Set up Environment Variables]
+    B --> C[Create API Requests]
+    C --> D[Write Test Scripts]
+    D --> E[Run Tests Manually]
+    E --> F{Tests Pass?}
+    F -->|Yes| G[Set up Automation]
+    F -->|No| H[Debug and Fix]
+    H --> D
+    G --> I[Run with Newman]
+    I --> J[Generate Reports]
+    J --> K[Integrate with CI/CD]
+    K --> L[Monitor API Health]
+```
+
 ## Contents
 
 - **exam.postman_collection.json**: A sample Postman collection that demonstrates API testing concepts and techniques.
@@ -60,6 +78,31 @@ Postman allows you to write JavaScript tests that run after a request is sent. Y
 - Chain requests together
 - Automate testing workflows
 
+## API Testing Process Visualization
+
+```mermaid
+flowchart LR
+    subgraph Setup
+    A[Create Collection] --> B[Configure Environments]
+    B --> C[Build Requests]
+    end
+    
+    subgraph Testing
+    C --> D[Write Test Scripts]
+    D --> E[Execute Tests]
+    E --> F{Pass/Fail}
+    F -->|Fail| G[Debug & Fix]
+    G --> D
+    F -->|Pass| H[Document Results]
+    end
+    
+    subgraph Automation
+    H --> I[Create Newman Jobs]
+    I --> J[Set up CI/CD]
+    J --> K[Schedule Monitoring]
+    end
+```
+
 ## Automation with Newman
 
 To run collections via command line:
@@ -86,6 +129,27 @@ newman run exam.postman_collection.json -r html
 - Write comprehensive test scripts to validate responses
 - Document your API requests and expected responses
 - Integrate with CI/CD pipelines for continuous testing
+
+## API Request Lifecycle
+
+```mermaid
+sequenceDiagram
+    participant Client as Postman Client
+    participant API as API Server
+    participant Tests as Test Scripts
+    participant Newman as Newman CLI
+    participant CI as CI/CD Pipeline
+    
+    Client->>API: Send Request (GET, POST, PUT, DELETE)
+    API->>Client: Response (Status, Headers, Body)
+    Client->>Tests: Execute Test Scripts
+    Tests->>Client: Test Results (Pass/Fail)
+    Client->>Newman: Export Collection
+    Newman->>API: Run Collection Requests
+    API->>Newman: Responses
+    Newman->>CI: Report Results
+    CI->>Newman: Trigger Scheduled Runs
+```
 
 ## Further Resources
 
