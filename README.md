@@ -39,7 +39,7 @@ graph TD
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/ajeetraina/Postman-API-Testing.git
+git clone https://github.com/arsheenkour/Postman-API-Testing.git
 ```
 
 2. Import the collection into Postman:
