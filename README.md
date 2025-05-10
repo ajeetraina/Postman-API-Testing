@@ -1,5 +1,12 @@
 # Postman API Testing
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub stars](https://img.shields.io/github/stars/ajeetraina/Postman-API-Testing.svg)](https://github.com/ajeetraina/Postman-API-Testing/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/ajeetraina/Postman-API-Testing.svg)](https://github.com/ajeetraina/Postman-API-Testing/network/members)
+[![GitHub last commit](https://img.shields.io/github/last-commit/ajeetraina/Postman-API-Testing)](https://github.com/ajeetraina/Postman-API-Testing/commits/master)
+[![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat&logo=postman&logoColor=white)](https://www.postman.com/)
+[![Newman](https://img.shields.io/badge/Newman-000000?style=flat&logo=postman&logoColor=FF6C37)](https://learning.postman.com/docs/running-collections/using-newman-cli/command-line-integration-with-newman/)
+
 A collection of Postman examples and resources for effective API testing.
 
 ## Overview
@@ -39,7 +46,7 @@ graph TD
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/arsheenkour/Postman-API-Testing.git
+git clone https://github.com/ajeetraina/Postman-API-Testing.git
 ```
 
 2. Import the collection into Postman:
